@@ -47,7 +47,7 @@ config/discourse.pill
 log/
 
 # Ignore plugins except for the bundled ones.
-/plugins/*
+#/plugins/*
 !/plugins/emoji/
 !/plugins/lazyYT/
 !/plugins/poll/
