@@ -24,6 +24,7 @@ GEM
       actionpack (>= 4.0.0, < 5.0)
     active_model_serializers (0.8.1)
       activemodel (>= 3.0)
+<<<<<<< HEAD
     activemodel (4.0.3)
       activesupport (= 4.0.3)
       builder (~> 3.1.0)
@@ -39,6 +40,27 @@ GEM
       multi_json (~> 1.3)
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
+=======
+    activemodel (3.2.12)
+      activesupport (= 3.2.12)
+      builder (~> 3.0.0)
+    activerecord (3.2.12)
+      activemodel (= 3.2.12)
+      activesupport (= 3.2.12)
+      arel (~> 3.0.2)
+      tzinfo (~> 0.3.29)
+    activerecord-postgres-hstore (0.7.7)
+      activerecord (>= 3.1)
+      pg-hstore (>= 1.1.5)
+      rake
+    activeresource (3.2.12)
+      activemodel (= 3.2.12)
+      activesupport (= 3.2.12)
+    activesupport (3.2.12)
+      i18n (~> 0.6)
+      multi_json (~> 1.0)
+<<<<<<< HEAD
+>>>>>>> Add Airbrake
     addressable (2.3.5)
     airbrake (3.1.2)
       activesupport
@@ -46,8 +68,19 @@ GEM
     annotate (2.6.1)
       activerecord (>= 2.3.0)
       rake (>= 0.8.7)
+<<<<<<< HEAD
     arel (4.0.2)
     atomic (1.1.14)
+=======
+    arel (3.0.3)
+=======
+    addressable (2.3.4)
+    airbrake (3.1.14)
+      builder
+      json
+    arel (3.0.2)
+>>>>>>> Add Airbrake
+>>>>>>> Add Airbrake
     barber (0.4.2)
       ember-source
       execjs
@@ -126,9 +159,19 @@ GEM
     hike (1.2.3)
     hiredis (0.4.5)
     i18n (0.6.9)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    ice_cube (0.11.1)
+>>>>>>> Add Airbrake
     image_optim (0.9.1)
       exifr (~> 1.1.3)
       fspath (~> 2.0.5)
+=======
+    ice_cube (0.11.0)
+    image_optim (0.8.0)
+      fspath (~> 2.0.3)
+>>>>>>> Add Airbrake
       image_size (~> 1.1.2)
       in_threads (~> 1.2.0)
       progress (~> 3.0.0)
@@ -162,12 +205,23 @@ GEM
     minitest (4.7.5)
     mocha (1.0.0)
       metaclass (~> 0.0.1)
+<<<<<<< HEAD
     mock_redis (0.11.0)
     moneta (0.7.20)
     msgpack (0.5.8)
     multi_json (1.8.4)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
+=======
+<<<<<<< HEAD
+    mock_redis (0.10.0)
+    msgpack (0.5.7)
+=======
+    mock_redis (0.8.1)
+>>>>>>> Add Airbrake
+    multi_json (1.8.2)
+    multipart-post (1.2.0)
+>>>>>>> Add Airbrake
     mustache (0.99.5)
     net-scp (1.1.2)
       net-ssh (>= 2.6.5)
@@ -390,8 +444,17 @@ PLATFORMS
 DEPENDENCIES
   actionpack-action_caching
   active_model_serializers
+<<<<<<< HEAD
+=======
+  activerecord-postgres-hstore
+<<<<<<< HEAD
+>>>>>>> Add Airbrake
   airbrake (= 3.1.2)
   annotate
+=======
+  airbrake
+  annotate!
+>>>>>>> Add Airbrake
   barber
   better_errors
   binding_of_caller
