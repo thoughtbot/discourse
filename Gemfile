@@ -110,6 +110,7 @@ gem 'message_bus'
 gem 'rails_multisite', path: 'vendor/gems/rails_multisite'
 
 gem 'redcarpet', require: false
+gem 'airbrake'
 gem 'eventmachine'
 gem 'fast_xs'
 
@@ -144,8 +145,7 @@ gem 'omniauth-github-discourse', require: 'omniauth-github'
 gem 'omniauth-oauth2', require: false
 gem 'omniauth-google-oauth2'
 gem 'oj'
-# while resolving https://groups.google.com/forum/#!topic/ruby-pg/5_ylGmog1S4
-gem 'pg', '0.15.1'
+gem 'pg'
 gem 'pry-rails', require: false
 gem 'rake'
 
