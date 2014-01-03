@@ -112,6 +112,7 @@ gem 'message_bus'
 gem 'rails_multisite', path: 'vendor/gems/rails_multisite'
 
 gem 'redcarpet', require: false
+gem 'airbrake'
 gem 'eventmachine'
 gem 'fast_xs'
 
