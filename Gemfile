@@ -1,5 +1,17 @@
 source 'https://rubygems.org'
 
+gem 'rails_12factor', group: :production
+
+# monkey patching to support dual booting
+module Bundler::SharedHelpers
+  def default_lockfile=(path)
+    @default_lockfile = path
+  end
+  def default_lockfile
+    @default_lockfile ||= Pathname.new("#{default_gemfile}.lock")
+  end
+end
+
 module ::Kernel
   def rails_master?
     ENV["RAILS_MASTER"]
