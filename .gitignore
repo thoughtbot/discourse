@@ -28,8 +28,8 @@ public/tombstone/*
 /bundle/*
 
 config/discourse.pill
-config/discourse.conf
-config/database.yml
+#config/discourse.conf
+#config/database.yml
 #config/redis.yml
 config/discourse.pill
 #config/environments/production.rb
