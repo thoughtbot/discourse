@@ -8,6 +8,7 @@ class EmbedController < ApplicationController
   layout 'embed'
 
   def comments
+    p "comments"
     embed_url = params.require(:embed_url)
     topic_id = TopicEmbed.topic_id_for_embed(embed_url)
 
@@ -53,6 +54,7 @@ class EmbedController < ApplicationController
   private
 
     def ensure_embeddable
+      p "ensure_embeddable"
 
       if !(Rails.env.development? && current_user.try(:admin?))
         raise Discourse::InvalidAccess.new('embeddable host not set') if SiteSetting.normalized_embeddable_host.blank?
