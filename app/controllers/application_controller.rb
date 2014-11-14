@@ -116,8 +116,7 @@ class ApplicationController < ActionController::Base
   end
 
   def rescue_discourse_actions(message, error, include_ember=false)
-    p error
-    p error.backtrace
+    p caller
     if request.format && request.format.json?
       # TODO: this doesn't make sense. Stuffing an html page into a json response will cause
       #       $.parseJSON to fail in the browser. Also returning text like "[error: 'invalid access']"
