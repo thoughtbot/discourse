@@ -58,8 +58,10 @@ class EmbedController < ApplicationController
 
       if !(Rails.env.development? && current_user.try(:admin?))
         raise Discourse::InvalidAccess.new('embeddable host not set') if SiteSetting.normalized_embeddable_host.blank?
-        p URI(request.referer || '').host
-        p SiteSetting.normalized_embeddable_host
+        p request
+        p "referer: #{request.referer}"
+        p "uri.host: #{URI(request.referer || '').host}"
+        p "SiteSetting.normalized_embeddable_host #{SiteSetting.normalized_embeddable_host}"
         p URI(request.referer || '').host != SiteSetting.normalized_embeddable_host
         raise Discourse::InvalidAccess.new('invalid referer host') if URI(request.referer || '').host != SiteSetting.normalized_embeddable_host
       end
